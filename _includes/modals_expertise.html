@@ -1,0 +1,42 @@
+ <!-- Service Modals -->
+ {% for post in site.posts %}
+  {% if post.type == "expertise" %}
+    <div class="portfolio-modal modal fade" id="expertiseModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <img src="img/icons/{{ post.icon }}.png" class="img-responsive img-centered expertise-icon" alt="{{ post.alt }}">
+							<h2>{{ post.title }}</h2>
+							</br>
+                            {% if post.description %}
+							    {% for item in post.description %}
+								<div class="modal-description">
+									<div class="expertise-title">{{ item.title}}</div>
+									<ul>
+									{% for entry in item.subitems %}
+										<li>{{entry.title}}</li>
+									{% endfor %}
+									</ul>
+								</div>
+								{% endfor %}
+								</br>
+								<img src="img/{{ post.img }}.png" class="img-responsive img-centered expertise-image" alt="{{ post.alt }}">
+                            {% endif %}
+							</br>
+                            <button type="button" class="btn btn-default btn-dark-background" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ {% endif %}
+{% endfor %}
