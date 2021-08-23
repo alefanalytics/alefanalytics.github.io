@@ -684,6 +684,22 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
+@media(max-width:767px) {
+	.modal-body h2 {
+		font-size: 2em;
+	}
+	.portfolio-modal .modal-content h2 {
+		font-size: 2em;
+	}
+	
+	.modal-description .expertise-title, .modal-description .services-title {
+		font-size:1.6em;
+	}
+	
+	.modal-description ul li {
+		font-size:1.3em;
+	}
+}
 
 /* Fix modal mouse wheel issues */
 /* https://github.com/twbs/bootstrap/issues/16297 */
