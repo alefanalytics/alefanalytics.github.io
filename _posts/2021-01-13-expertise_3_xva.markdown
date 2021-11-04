@@ -10,6 +10,8 @@ description:
   -
     title: "Valuation adjustments modelling:"
     subitems:
+    - title: Model calibration.
+    - title: Risk-factors diffusion.
     - title: Forward market value and sensitivities grids.
     - title: Variation margin modelling.
     - title: Dynamic initial margin modelling (cleared and bilateral using ISDA SIMM™).
@@ -19,9 +21,6 @@ description:
     - title: XVA PnL attribution.
     - title: Wrong way risk.
 ---
-
-
-
 
 
 

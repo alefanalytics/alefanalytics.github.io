@@ -14,10 +14,9 @@ description:
     - title: Vanilla options.
     - title: Exotics.
   - 
-    title: "Evaluated using:"
+    title: "RFR instruments in the context of LIBOR reform:"
     subitems:
-    - title: Closed-form formulas.
-    - title: American Monte Carlo.
-  - 
-    title: RFR instruments in the context of LIBOR reform.
+    - title: Mono and cross-currency swaps.
+    - title: Caps and swaptions.
+    - title: Hybrids and exotics.
 ---
