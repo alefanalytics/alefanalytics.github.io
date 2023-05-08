@@ -28,7 +28,9 @@
 								</div>
 								{% endfor %}
 								</br>
+								{% if post.img %}
 								<img src="img/{{ post.img }}.png" class="img-responsive img-centered expertise-image" alt="{{ post.alt }}">
+								{% endif %}
                             {% endif %}
 							</br>
                             <button type="button" class="btn btn-default btn-dark-background" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>

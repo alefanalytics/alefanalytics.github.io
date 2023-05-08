@@ -443,6 +443,7 @@ section.success {
 
 .profile-image {
 	height: 15em;
+	border-radius: 50%;
 }
 
 .founder-name {
